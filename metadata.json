@@ -1,0 +1,5 @@
+{
+  "name": "Aether Studio",
+  "description": "A modular, node-based AI engineering workbench. Features a Godot-inspired architecture for composing agents, tools, and memory systems.",
+  "requestFramePermissions": []
+}

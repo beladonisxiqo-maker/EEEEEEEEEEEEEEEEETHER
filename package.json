@@ -1,0 +1,36 @@
+{
+  "name": "aether-studio-desktop",
+  "version": "1.0.0",
+  "description": "Native Runtime for Aether Studio",
+  "main": "electron/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "concurrently \"npm run dev\" \"wait-on tcp:5173 && electron .\"",
+    "build": "tsc && vite build",
+    "dev": "vite"
+  },
+  "keywords": [
+    "ai",
+    "ide",
+    "electron",
+    "agent"
+  ],
+  "author": "Aether Systems",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "typescript": "^5.2.0",
+    "vite": "^5.0.0",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0"
+  },
+  "dependencies": {
+    "@google/genai": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.0"
+  }
+}
